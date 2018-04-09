@@ -1,0 +1,57 @@
+.header {
+  height: 100vh;
+  background-image: radial-gradient(
+      rgba($color-primary-dark, 0.8),
+      rgba($color-primary, 0.8)
+    ),
+    url('./img/header.jpg');
+  background-size: cover;
+  background-position: top;
+  position: relative;
+
+  &__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    text-align: center;
+  }
+
+  &__seenon-text {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-column-gap: 1.5rem;
+    align-items: center;
+
+    font-size: 1.6rem;
+    color: $color-grey-light-2;
+
+    &::before,
+    &::after {
+      content: '';
+      height: 1px;
+      display: block;
+      background-color: currentColor;
+    }
+  }
+
+  &__seenon-logos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 3rem;
+    justify-items: center;
+    align-items: center;
+    margin-top: 1.5rem;
+
+    img {
+      cursor: pointer;
+      filter: brightness(80%);
+      transition: all 0.2s;
+
+      &:hover {
+        filter: brightness(100%);
+        transform: translateY(-3px);
+      }
+    }
+  }
+}
