@@ -8,7 +8,6 @@
         <h2 class="heading-secondary">
           Portfolio of work
         </h2>
-        <hr class="test">
       </div>
 
       <div class="row">
@@ -43,12 +42,11 @@
               </figcaption>
             </figure>
             <div class="story__text">
-              <h3 class="heading-tertiary u-margin-bottom-small">Wow! My life is completely different now</h3>
-              <p>
+              <h3 class="heading-tertiary u-margin-bottom-mini">Wow! My life is completely different now</h3>
+              <p class="paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
               </p>
-              <br />
-              <p>
+              <p class="paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
               </p>
             </div>
@@ -63,28 +61,9 @@
       </div>
 
       <section class="gallery">
-        <figure class="gallery__item">
-          <img src="../img/react.png" alt="Gallery image 1" class="gallery__img">
+        <figure class="gallery__item" v-for="data in galleryData">
+          <img :src="data.image" :alt="data.text" class="gallery__img">
         </figure>
-        <figure class="gallery__item">
-          <img src="../img/js.jpg" alt="Gallery image 2" class="gallery__img">
-        </figure>
-        <figure class="gallery__item">
-          <img src="../img/sass.png" alt="Gallery image 3" class="gallery__img">
-        </figure>
-        <figure class="gallery__item">
-          <img src="../img/node.png" alt="Gallery image 1" class="gallery__img">
-        </figure>
-        <figure class="gallery__item">
-          <img src="../img/mongodb.png" alt="Gallery image 1" class="gallery__img">
-        </figure>
-        <figure class="gallery__item">
-          <img src="../img/vue.png" alt="Gallery image 1" class="gallery__img">
-        </figure>
-        <figure class="gallery__item">
-          <img src="../img/d3.png" alt="Gallery image 1" class="gallery__img">
-        </figure>
-
       </section>
 
       <!-- <section class="section-book">
@@ -213,6 +192,32 @@ export default {
           message:
             'Testing 2 Lorem ipsum dolor sit amet, ex sonet suavitate mei. Nec ut errem munere. Ne cum ubique ceteros. His vidit tollit eirmod cu.',
           image: '../static/nat-7.jpg'
+        }
+      ],
+      galleryData: [
+        {
+          image: '../static/react.png',
+          text: 'React'
+        },
+        {
+          image: '../static/js.jpg',
+          text: 'JavaScript'
+        },
+        {
+          image: '../static/node.png',
+          text: 'NodeJS'
+        },
+        {
+          image: '../static/vue.png',
+          text: 'VueJS'
+        },
+        {
+          image: '../static/mongodb.png',
+          text: 'MongoDB'
+        },
+        {
+          image: '../static/sass.png',
+          text: 'Sass'
         }
       ]
     };

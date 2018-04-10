@@ -4,7 +4,7 @@
       <img :src="image" alt="card media">
     </div>
     <div class="card__content">
-      <h3 class="heading-tertiary u-margin-bottom-small">{{ title }}</h3>
+      <h3 class="heading-tertiary u-margin-bottom-mini">{{ title }}</h3>
       <p class="paragraph">{{ message }}</p>
     </div>
     <div class="card__footer">
