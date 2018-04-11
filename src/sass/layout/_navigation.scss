@@ -2,7 +2,6 @@
 
   &__nav {
     z-index: 100;
-
   }
 
   &__list {
@@ -11,6 +10,10 @@
     list-style: none;
     background-color: transparent;
     padding: 2rem 4rem;
+
+    @include respond(tab-port) {
+      justify-content: center;
+    }
   }
 
   &__link {
@@ -30,6 +33,7 @@
       color: $color-primary-dark;
       background-color: $color-grey-light-2;
       box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+      border-bottom: 3px solid $color-secondary-dark;
     }
   }
 }

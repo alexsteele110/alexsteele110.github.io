@@ -1,12 +1,12 @@
 <template>
   <div>
 
-    <Header class="u-margin-bottom-big"></Header>
+    <Header></Header>
 
     <section class="section-about" id="portfolio">
       <div class="u-center-text u-margin-bottom-big">
         <h2 class="heading-secondary">
-          Portfolio of work
+          My projects
         </h2>
       </div>
 
@@ -19,7 +19,7 @@
 
     <main>
 
-      <section class="section-stories u-margin-bottom-big">
+      <section class="section-stories">
         <div class="bg-video">
           <video class="bg-video__content" autoplay muted loop>
             <source src="../img/video.mp4" type="video/mp4">
@@ -36,13 +36,13 @@
         <div class="row">
           <div class="story">
             <figure class="story__shape">
-              <img src="../img/nat-6.jpg" alt="Person on a tour" class="story__img">
+              <img src="../img/me.jpg" alt="Person on a tour" class="story__img">
               <figcaption class="story__caption">
                 Alex Steele
               </figcaption>
             </figure>
             <div class="story__text">
-              <h3 class="heading-tertiary u-margin-bottom-mini">Wow! My life is completely different now</h3>
+              <h3 class="heading-tertiary u-margin-bottom-mini">My Journey Into Software Development</h3>
               <p class="paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
               </p>
@@ -54,8 +54,8 @@
         </div>
       </section>
 
-      <div class="u-center-text u-margin-bottom-medium">
-        <h2 class="heading-secondary">
+      <div class="u-center-text">
+        <h2 class="heading-secondary u-margin-top-huge">
           Skills
         </h2>
       </div>
@@ -66,49 +66,6 @@
         </figure>
       </section>
 
-      <!-- <section class="section-book">
-        <div class="row">
-          <div class="book">
-            <div class="book__form">
-              <div class="u-margin-bottom-medium">
-                <h2 class="heading-secondary">Start booking now</h2>
-              </div>
-              <form action="#" class="form">
-                <div class="form__group">
-                  <input type="text" class="form__input" placeholder="Full Name" id="name" required>
-                  <label for="name" class="form__label">Full name</label>
-                </div>
-                <div class="form__group">
-                  <input type="email" class="form__input" placeholder="Email address" id="email" required>
-                  <label for="email" class="form__label">Email address</label>
-                </div>
-
-                <div class="form__group u-margin-bottom-medium">
-                  <div class="form__radio-group">
-                    <input type="radio" class="form__radio-input" id="small" name="size">
-                    <label for="small" class="form__radio-label">
-                      <span class="form__radio-button"></span>
-                      Small tour group
-                    </label>
-                  </div>
-
-                  <div class="form__radio-group">
-                    <input type="radio" class="form__radio-input" id="large" name="size">
-                    <label for="large" class="form__radio-label">
-                      <span class="form__radio-button"></span>
-                      Large tour group
-                    </label>
-                  </div>
-                </div>
-
-                <div class="form__group">
-                  <button class="btn btn--green">Next step &rarr;</button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section> -->
     </main>
 
     <footer class="footer">
@@ -142,23 +99,6 @@
       </div>
     </footer>
 
-    <!-- <div class="popup" id="popup">
-      <div class="popup__content">
-        <div class="popup__left">
-          <img src="" alt="Tour photo" class="popup__img">
-          <img src="" alt="Tour photo" class="popup__img">
-        </div>
-        <div class="popup__right">
-          <a href="#section-tours" class="popup__close">&times;</a>
-          <h2 class="heading-secondary u-margin-bottom-small">Start booking now</h2>
-          <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read these terms before booking</h3>
-          <p class="popup__text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          </p>
-          <a href="#" class="btn btn--green">Book now</a>
-        </div>
-      </div>
-    </div> -->
   </div>
 </template>
 
@@ -178,13 +118,13 @@ export default {
         {
           title: 'Wanderful',
           message:
-            'Testing 2 Lorem ipsum dolor sit amet, ex sonet suavitate mei. Nec ut errem munere.',
+            'A travel roulette web app. Go to random locations throughout the world to get restaurant, flight, and hotel information.',
           image: '../static/nat-8.jpg'
         },
         {
           title: 'BeerMe',
           message:
-            'Testing 2 Lorem ipsum dolor sit amet, ex sonet suavitate mei. Nec ut errem munere. Ne cum ubique ceteros. His vidit tollit eirmod cu, doming accusamus posidonium id vim.',
+            'A hub for beer enthusiasts. Come here to search, review, and see community ratings and comments on thousands of beers.',
           image: '../static/nat-9.jpg'
         },
         {
