@@ -8,8 +8,8 @@
       <p class="paragraph">{{ message }}</p>
     </div>
     <div class="card__footer">
-      <a :href="url" class="btn-card" target="_blank">GitHub</a>
-      <a :href="url" class="btn-card" target="_blank">Live site</a>
+      <a v-if="githubUrl":href="githubUrl" class="btn-card" target="_blank">GitHub</a>
+      <a v-if="liveUrl" :href="liveUrl" class="btn-card" target="_blank">Live site</a>
     </div>
   </div>
 </template>
@@ -17,7 +17,7 @@
 <script>
 export default {
   name: 'Card',
-  props: ['message', 'title', 'image', 'url']
+  props: ['message', 'title', 'image', 'liveUrl', 'githubUrl']
 };
 </script>
 

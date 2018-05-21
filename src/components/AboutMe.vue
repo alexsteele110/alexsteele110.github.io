@@ -16,9 +16,9 @@
       <div class="row">
         <div class="story">
           <figure class="story__shape">
-            <img src="../img/me.jpg" alt="Person on a tour" class="story__img">
+            <img :src="content.image" alt="About me" class="story__img">
             <figcaption class="story__caption">
-              Alex Steele
+              {{ content.name }}
             </figcaption>
           </figure>
           <div class="story__text">
@@ -38,6 +38,8 @@ export default {
   data() {
     return {
       content: {
+        name: 'Alex Steele',
+        image: '../static/me.jpg',
         title: 'My Journey Into Software Development',
         paragraphs: [
           'First paragraph',

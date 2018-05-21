@@ -1,16 +1,16 @@
 <template>
-    <div>
+    <section id="skills">
         <div class="u-center-text">
             <h2 class="heading-secondary u-margin-top-huge">
                 Skills
             </h2>
         </div>
-        <section class="gallery" id="skills">
+        <div class="gallery">
             <figure class="gallery__item" v-for="data in galleryData" :key="data.text">
                 <img :src="data.image" :alt="data.text" class="gallery__img">
             </figure>       
-        </section>
-    </div>
+        </div>
+    </section>
 </template>
 
 <script>

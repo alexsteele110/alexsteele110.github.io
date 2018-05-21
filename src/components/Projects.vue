@@ -9,7 +9,8 @@
                 :message="data.message" 
                 :title="data.title" 
                 :image="data.image" 
-                :url="data.url">
+                :liveUrl="data.liveUrl"
+                :githubUrl="data.githubUrl">
                 </Card>
             </div>
         </div>
@@ -32,21 +33,23 @@ export default {
           message:
             'A travel roulette web app. Go to random locations throughout the world to get restaurant, flight, and hotel information.',
           image: '../static/wanderful.png',
-          url: 'http://www.wanderful-travel.com'
+          liveUrl: 'http://www.wanderful-travel.com',
+          githubUrl: 'https://github.com/alexsteele110/Voyage2-Bears-11'
         },
         {
           title: 'BeerMe',
           message:
             'A hub for beer enthusiasts. Come here to search, review, and find community ratings and comments on thousands of beers.',
           image: '../static/beerme.png',
-          url: 'https://vast-retreat-88379.herokuapp.com/'
+          liveUrl: 'https://vast-retreat-88379.herokuapp.com/',
+          githubUrl: 'https://github.com/alexsteele110/BeerMe'
         },
         {
-          title: 'Card Title Number Three',
+          title: 'HTML/Image Exporter',
           message:
-            'Testing 2 Lorem ipsum dolor sit amet, ex sonet suavitate mei. Nec ut errem munere. Ne cum ubique ceteros. His vidit tollit eirmod cu.',
-          image: '../static/nat-7.jpg',
-          url: 'https://google.com'
+            'Combines the power of Node and puppeteer to grab HTML, images, and screenshots of web pages into a single zip file.',
+          image: '../static/exporter.png',
+          githubUrl: 'https://github.com/alexsteele110/cms-exporter'
         }
       ]
     };

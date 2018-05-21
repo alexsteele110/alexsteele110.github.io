@@ -8,7 +8,7 @@
     </main>
     <footer class="footer">
       <div class="row">
-        2018, Alexander Steele
+        &copy;2018, Alexander Steele
       </div>
     </footer>
 
