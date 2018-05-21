@@ -3,7 +3,7 @@
 
     <Header></Header>
 
-    <section class="section-about" id="portfolio">
+    <section class="section-about" id="projects">
       <div class="u-center-text u-margin-bottom-big">
         <h2 class="heading-secondary">
           My projects
@@ -11,15 +11,15 @@
       </div>
 
       <div class="row">
-        <div class="col-1-of-3" v-for="data in cardData">
-          <Card :message="data.message" :title="data.title" :image="data.image"></Card>
+        <div class="col-1-of-3" v-for="data in cardData" :key="data.title">
+          <Card :message="data.message" :title="data.title" :image="data.image" :url="data.url"></Card>
         </div>
       </div>
     </section>
 
     <main>
 
-      <section class="section-stories">
+      <section class="section-stories" id="about">
         <div class="bg-video">
           <video class="bg-video__content" autoplay muted loop>
             <source src="../img/video.mp4" type="video/mp4">
@@ -60,42 +60,17 @@
         </h2>
       </div>
 
-      <section class="gallery">
-        <figure class="gallery__item" v-for="data in galleryData">
+      <section class="gallery" id="skills">
+        <figure class="gallery__item" v-for="data in galleryData" :key="data.text">
           <img :src="data.image" :alt="data.text" class="gallery__img">
-        </figure>
+        </figure>       
       </section>
 
     </main>
 
     <footer class="footer">
-      <div class="footer__logo-box">
-
-        <picture class="footer__logo">
-          <source srcset="../img/logo-green-small-1x.png 1x, ../img/logo-green-small-2x.png 2x"
-                  media="(max-width: 37.5rem)">
-          <img srcset="../img/logo-green-1x.png 1x, ../img/logo-green-2x.png 2x" alt="Full logo" src="../img/logo-green-2x.png">
-        </picture>
-
-
-      </div>
       <div class="row">
-        <div class="col-1-of-2">
-          <div class="footer__navigation">
-            <ul class="footer__list">
-              <li class="footer__item"><a href="#" class="footer__link">Company</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Contact us</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Careers</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Privacy</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Terms</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-1-of-2">
-          <p class="footer__copyright">
-            Built by <a href="#" class="footer__link">Jonas Schmedtmann</a> for my online course <a href="" class="footer__link">Advanced CSS and Sass</a>. Copyright &copy; by Jonas Schmedtmann. You are 100% allowed to use this webpage for both personal and commercial use, but NOT to claim it as your own design. A credit to the original author, Jonas Schmedtmann, is of course highly appreciated!
-          </p>
-        </div>
+        2018, Alexander Steele
       </div>
     </footer>
 
@@ -107,7 +82,7 @@ import Header from './Header';
 import Card from './Card';
 
 export default {
-  name: 'HelloWorld',
+  name: 'Home',
   components: {
     Header,
     Card
@@ -119,26 +94,25 @@ export default {
           title: 'Wanderful',
           message:
             'A travel roulette web app. Go to random locations throughout the world to get restaurant, flight, and hotel information.',
-          image: '../static/nat-8.jpg'
+          image: '../static/wanderful.png',
+          url: 'http://www.wanderful-travel.com'
         },
         {
           title: 'BeerMe',
           message:
-            'A hub for beer enthusiasts. Come here to search, review, and see community ratings and comments on thousands of beers.',
-          image: '../static/nat-9.jpg'
+            'A hub for beer enthusiasts. Come here to search, review, and find community ratings and comments on thousands of beers.',
+          image: '../static/beerme.png',
+          url: 'https://vast-retreat-88379.herokuapp.com/'
         },
         {
           title: 'Card Title Number Three',
           message:
             'Testing 2 Lorem ipsum dolor sit amet, ex sonet suavitate mei. Nec ut errem munere. Ne cum ubique ceteros. His vidit tollit eirmod cu.',
-          image: '../static/nat-7.jpg'
+          image: '../static/nat-7.jpg',
+          url: 'https://google.com'
         }
       ],
       galleryData: [
-        {
-          image: '../static/react.png',
-          text: 'React'
-        },
         {
           image: '../static/js.jpg',
           text: 'JavaScript'
@@ -146,6 +120,10 @@ export default {
         {
           image: '../static/node.png',
           text: 'NodeJS'
+        },
+        {
+          image: '../static/react.png',
+          text: 'React'
         },
         {
           image: '../static/vue.png',
@@ -158,6 +136,14 @@ export default {
         {
           image: '../static/sass.png',
           text: 'Sass'
+        },
+        {
+          image: '../static/python.png',
+          text: 'Python'
+        },
+        {
+          image: '../static/d3.png',
+          text: 'D3.js'
         }
       ]
     };

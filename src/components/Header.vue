@@ -8,11 +8,13 @@
       </h1>
       <div class="header__seenon-text">Contact Me</div>
       <div class="header__seenon-logos">
-        <a v-for="icon in icons">
-          <svg>
-            <use :xlink:href="icon"></use>
-          </svg>
-        </a>
+        <div v-for="data in navData">
+          <a :href="data.url">
+            <svg>
+              <use :xlink:href="data.icon"></use>
+            </svg>
+          </a>
+        </div>
       </div>
     </div>
   </header>
@@ -28,10 +30,20 @@ export default {
   },
   data() {
     return {
-      icons: [
-        '../static/sprite.svg#icon-github-with-circle',
-        '../static/sprite.svg#icon-mail',
-        '../static/sprite.svg#icon-linkedin-with-circle'
+      navData: [
+        {
+          icon: '../static/sprite.svg#icon-github-with-circle',
+          url: 'https://github.com/alexsteele110'
+        },
+        {
+          icon: '../static/sprite.svg#icon-mail',
+          url: 'mailto:alexsteele110@gmail.com'
+        },
+        {
+          icon: '../static/sprite.svg#icon-linkedin-with-circle',
+          url: 'https://linkedin.com/in/asteele110'
+        }    
+        
       ]
     };
   }
