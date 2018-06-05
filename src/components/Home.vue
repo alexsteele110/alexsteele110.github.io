@@ -6,17 +6,13 @@
       <AboutMe></AboutMe>
       <Gallery></Gallery> 
     </main>
-    <footer class="footer">
-      <div class="row">
-        &copy;2018, Alexander Steele
-      </div>
-    </footer>
-
+    <Footer></Footer>
   </div>
 </template>
 
 <script>
 import Header from './Header';
+import Footer from './Footer';
 import Card from './Card';
 import Projects from './Projects';
 import AboutMe from './AboutMe';
@@ -26,6 +22,7 @@ export default {
   name: 'Home',
   components: {
     Header,
+    Footer,
     Card,
     Projects,
     AboutMe,

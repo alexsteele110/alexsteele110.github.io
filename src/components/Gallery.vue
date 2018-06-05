@@ -7,8 +7,9 @@
         </div>
         <div class="gallery">
             <figure class="gallery__item" v-for="data in galleryData" :key="data.text">
+                <span class="gallery__text" style="position:absolute;">{{ data.text }}</span>
                 <img :src="data.image" :alt="data.text" class="gallery__img">
-            </figure>       
+            </figure>        
         </div>
     </section>
 </template>
