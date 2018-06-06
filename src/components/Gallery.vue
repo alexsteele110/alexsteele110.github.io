@@ -7,7 +7,7 @@
         </div>
         <div class="gallery">
             <figure class="gallery__item" v-for="data in galleryData" :key="data.text">
-                <span class="gallery__text" style="position:absolute;">{{ data.text }}</span>
+                <span class="gallery__text" :style="{ color: data.textColor }">{{ data.text }}</span>
                 <img :src="data.image" :alt="data.text" class="gallery__img">
             </figure>        
         </div>
@@ -22,35 +22,43 @@ export default {
       galleryData: [
         {
           image: '../static/js.jpg',
-          text: 'JavaScript'
+          text: 'JavaScript',
+          textColor: '#222222'
         },
         {
           image: '../static/node.png',
-          text: 'NodeJS'
+          text: 'NodeJS',
+          textColor: '#ccc'
         },
         {
           image: '../static/react.png',
-          text: 'React'
+          text: 'React',
+          textColor: '#ccc'
         },
         {
           image: '../static/vue.png',
-          text: 'VueJS'
+          text: 'VueJS',
+          textColor: '#ccc'
         },
         {
           image: '../static/mongodb.png',
-          text: 'MongoDB'
+          text: 'MongoDB',
+          textColor: '#222222'
         },
         {
           image: '../static/sass.png',
-          text: 'Sass'
+          text: 'Sass',
+          textColor: '#222222'
         },
         {
           image: '../static/python.png',
-          text: 'Python'
+          text: 'Python',
+          textColor: '#ccc'
         },
         {
           image: '../static/d3.png',
-          text: 'D3.js'
+          text: 'D3.js',
+          textColor: '#ccc'
         }
       ]
     };

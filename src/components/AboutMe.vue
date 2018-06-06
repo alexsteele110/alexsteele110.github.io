@@ -39,10 +39,10 @@ export default {
       content: {
         name: 'Alex Steele',
         image: '../static/me.jpg',
-        title: 'My Journey Into Software Development',
+        title: 'My Journey in Software Development',
         paragraphs: [
-          'First paragraph',
-          'Second paragraph'
+          'Not so long ago I made a decision to learn how to program and from there quickly realized it was something I loved to do. I currently specialize in web development and I strive to learn and work with all aspects involved in building interesting web applications.',
+          'I enjoy utilizing the power of frameworks like React to make complex, performant, and modern software. Node is another preference of mine in order to keep most of my workflow inside JavaScript. I like to keep my front end design clean and simple, whether that be from creating custom CSS and Sass for this portfolio, or borrowing from the excellent CSS libraries offered today like Bootstrap or Material UI.'
         ]
       }    
     };

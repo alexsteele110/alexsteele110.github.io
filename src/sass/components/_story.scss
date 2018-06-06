@@ -13,7 +13,7 @@
   @include respond(tab-port) {
     width: 100%;
     padding: 4rem;
-    padding-left: 7rem;
+    padding-left: 4rem;
   }
 
 
@@ -35,7 +35,7 @@
 
   &__img {
     height: 100%;
-    transform: translateX(-4rem) scale(1.4);
+    transform: translateX(1rem) scale(2);
     backface-visibility: hidden;
     transition: filter 0.5s;
     transition: transform 0.5s;
@@ -61,7 +61,7 @@
   }
 
   &:hover &__img {
-    transform: translate(-4rem) scale(1);
+    transform: scale(1.5);
     filter: blur(3px) brightness(80%);
   }
 }
